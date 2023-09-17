@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitEase - Smart Transportation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to TransitEase</h1>
+        <p>Your Smart Transportation Solution</p>
+    </header>
+
+    <!-- Map Section -->
+    <section id="map">
+        <!-- The Google Map will be inserted here -->
+    </section>
+
+<!-- User Interface Section -->
+<section id="user-interface">
+    <h2>Find Your Bus</h2>
+
+    <!-- State Dropdown -->
+    <label for="state-select">Select State:</label>
+    <select id="state-select">
+        <option value="">-- Select State --</option>
+        <!-- Add state options dynamically using JavaScript -->
+    </select>
+
+    <!-- District Dropdown -->
+    <label for="district-select">Select District:</label>
+    <select id="district-select" disabled>
+        <option value="">-- Select District --</option>
+        <!-- Add district options dynamically using JavaScript -->
+    </select>
+
+    <!-- City Dropdown -->
+    <label for="city-select">Select City:</label>
+    <select id="city-select" disabled>
+        <option value="">-- Select City --</option>
+        <!-- Add city options dynamically using JavaScript -->
+    </select>
+
+    <!-- Bus Stop Dropdown -->
+    <label for="bus-stop-select">Select Bus Stop:</label>
+    <select id="bus-stop-select" disabled>
+        <option value="">-- Select Bus Stop --</option>
+        <!-- Add bus stop options dynamically using JavaScript -->
+    </select>
+
+
+    <!-- Search Button -->
+    <button id="search-button" disabled>Search</button>
+<div id="bus-info" class="bus-info-container">
+        <!-- Real-time bus information displayed here -->
+    </div>
+    <!-- Display Area for Bus Information -->
+    <div id="bus-info">
+        <!-- Bus arrival information will be displayed here -->
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 TransitEase</p>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBljewomeyAcDWwTLgoD_mxYqjUipNp1lM&libraries=places"></script>
+    <script src="script.js"></script>
+</body>
+</html>
